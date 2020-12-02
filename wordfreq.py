@@ -1,19 +1,11 @@
-"""************pesudo code**************
+"""************pseudo code**************
 #
-#  def tokensize(lines):
-#       #processing lines
-#       words[] #list to save words in
-#       for line in lines:
-#           start =0
-#           while start < len(line):
-#               print(line[star])
-#               start = start+1
 #
 # """
 
 def tokenize(lines):
     """
-    split list or words into separate words and char
+    split list or words into separate words and characters
 
     :param list of lines:
     :return list of separated words, characters and numbers:
