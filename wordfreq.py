@@ -3,6 +3,7 @@
 #
 # """
 
+
 def tokenize(lines):
     """
     split list or words into separate words and characters
@@ -16,7 +17,7 @@ def tokenize(lines):
     # i.e. a line = 'you are 5year older, than him', 'but that is ok'
     for line in lines:
         start = 0
-        print(len(line))
+        #print(len(line))
         while start < len(line):
             while line[start].isspace():
                 start += 1
@@ -50,3 +51,30 @@ def tokenize(lines):
             else:
                 break
     return words
+
+
+def countWords(words, stopWords):
+    frequencies = {}
+    if stopWords:
+        for word1 in words:
+            for word2 in stopWords:
+                if word1 == word2:
+                    pass
+                elif word1 in frequencies:
+                    frequencies[word1] = frequencies[word1] + 1
+                else:
+                    frequencies[word1] = 1
+    else:
+        for word in words:
+            if word in frequencies:
+                frequencies[word] = frequencies[word] + 1
+            else:
+                frequencies[word] = 1
+
+    return frequencies
+
+
+# hi = ["He he he in the room, she said."]
+# du = tokenize(hi)
+# han = [(["clean", "water"], [])]
+countWords(["clean", "water"], [])
