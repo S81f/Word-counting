@@ -55,6 +55,7 @@ def countWords(words, stopWords):
     :return: dictionary frequencies where the value is the word and the key is
     a number of how often the word is  repeated.
     """
+
     frequencies = {}
     if stopWords:
         for word1 in words:
