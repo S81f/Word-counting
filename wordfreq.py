@@ -7,7 +7,7 @@ def tokenize(lines):
     """
     words = []
     # print(len(lines)) # a line = set of words. The ex below is 2 lines
-    # i.e. a line = 'you are 5year older, than him', 'but that is ok'
+    # i.e. a line = 'you are 5 year older, than him', 'but that is ok'
     for line in lines:
         start = 0
         # print(len(line))
