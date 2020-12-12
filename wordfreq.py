@@ -85,11 +85,8 @@ def printTopMost(frequencies, n):
     if len(frequencies) < n:
         # print('n cant be larger')
         pass
-    else:
+    else: # key=lambda x: x[1] to tel the fuction to sort the dici after its values. reverse=True to sort Descending
         sort_orders = sorted(frequencies.items(), key=lambda x: x[1], reverse=True)
-
-        # f = lambda x: "".join(map(str, x))
-        # print(" ".join(f(x) for x in sort_orders))
 
         for i in range(n):
             print(str(sort_orders[i][0]).ljust(20) + str(sort_orders[i][1]).rjust(5))
